@@ -19,6 +19,16 @@ body {
   color: aliceblue;
 }
 
+.technologies li {
+  list-style: none;
+}
+
+.technologies a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: rgb(140, 140, 140);
+}
+
 .navbar {
   position: fixed;
   width: 100%;
@@ -35,7 +45,6 @@ body {
 }
 
 .menu {
-  /* position: fixed; */
   display: flex;
   width: 50%;
   justify-content: space-around; /*espacio entre las listas*/
@@ -64,9 +73,10 @@ body {
 }
 
 .main img {
+  margin-left: 7em;
   border-radius: 60%;
-  width: 350px;
-  height: 350px;
+  width: 500px;
+  height: 500px;
   border: 7px solid rgb(57, 57, 57);
 }
 
@@ -97,6 +107,9 @@ span {
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(100, 50, 50, 50);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .download-cv:hover {
   background-color: rgb(100, 100, 100);
@@ -106,18 +119,20 @@ span {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  margin-top: 70px;
+  grid-template-columns: repeat(2, 1fr);
   width: 100vw;
+  height: 100vh;
   align-items: center;
+  margin: 0 auto;
 }
 
 .about img {
-  width: 100%;
-  grid-column: 1/5;
+  width: 80%;
+  margin-left: 45px;
 }
 
 .about-info {
-  grid-column: 5/10;
   padding: 3em;
 }
 
@@ -142,6 +157,7 @@ span {
 
 .portfolio {
   width: 100vw;
+  height: 100vh;
   background-color: rgb(37, 37, 37);
 }
 
@@ -152,6 +168,7 @@ span {
 
 .portfolio-headings h2 {
   font-size: 2.5em;
+  color: aliceblue;
 }
 
 .portfolio .container {
@@ -166,7 +183,7 @@ span {
   width: 300px;
   color: aliceblue;
   height: 350px;
-  background-color: cadetblue;
+  background-color: rgb(69, 69, 69);
   margin: 1em;
 }
 
@@ -174,8 +191,29 @@ span {
   width: 100%;
   /* opacity: 50%;transparencia */
   height: 150px;
-  background-image: url(../img/foto.jpg);
+  background-image: url(https://i.guim.co.uk/img/media/b563ac5db4b4a4e1197c586bbca3edebca9173cd/0_12_3307_1985/master/3307.jpg?width=1020&quality=85&auto=format&fit=max&s=9dbc7c10980d174e67725b5cacf3c3a2);
   background-size: cover; /*abarcar el total asignado*/
+}
+
+.card_img-2 {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://www.egames.news/__export/1638809435218/sites/debate/img/2021/12/06/cxmo_conseguir_a_charmanderx_charmeleonx_charizard_en_pokxmon_diamante_brillante_y_perla_reluciente.jpg_423682103.jpg);
+  background-size: cover;
+}
+
+.card_img-3 {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://static.elcorreo.com/www/multimedia/202103/04/media/cortadas/bitcoin-criptomonedas-que-son-como-comprar-2021-kOGG-U130689965568SbH-1248x770@El%20Correo.jpg);
+  background-size: cover;
+}
+
+.card_img-4 {
+  width: 100%;
+  height: 150px;
+  background-image: url(https://img.freepik.com/vector-gratis/veterinario-medico-perro-gato-mostrador-clinica-veterinaria_36082-523.jpg?w=2000);
+  background-size: cover;
 }
 
 .card-title {
@@ -217,6 +255,14 @@ span {
 }
 
 /*aqui se salta 170 linead de codigo en CSS*/
+.contact-section {
+  width: 80vw;
+  height: 90vv;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+}
 
 .container-contact {
   padding: 3em;
@@ -228,9 +274,13 @@ span {
 }
 
 .container-contact img {
-  width: 750px;
-  height: 700px;
+  width: 500px;
+  height: 500px;
   bottom: 0px;
+}
+
+.contact form {
+  display: grid;
 }
 
 .form {
@@ -245,31 +295,32 @@ span {
   margin-bottom: 1em;
   background: none;
   border: none;
-  border-bottom: 1px solid aliceblue;
-  color: aliceblue;
+  border-bottom: 1px solid rgb(37, 37, 37);
+  color: rgb(0, 0, 0);
 }
 
 .form textarea {
   height: 150px;
   background: none;
-  color: aliceblue;
+  color: black;
   padding: 1.5em;
-  border: 1px solid aliceblue;
+  border: 1px solid rgb(37, 37, 37);
 }
 
 .btn-submit {
   padding: 10px 20px;
+  color: aliceblue;
   margin: 1em;
   border: none;
   text-transform: uppercase;
-  background-color: aqua;
+  background-color: rgb(37, 37, 37);
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 1px 3px 11px -5px rgba(100, 50, 50, 50);
 }
 
 .btn-submit:hover {
-  background-color: aliceblue;
+  background-color: rgb(70, 13, 13);
   box-shadow: none;
 }
 
@@ -280,16 +331,18 @@ span {
   align-items: center;
   width: 100vw;
   height: 200px;
-  background-color: aqua;
+  background-color: rgb(37, 37, 37);
 }
 
 .footer-content h2 {
   font-size: 3em;
+  color: aliceblue;
 }
 
 .social-network i,
 .footer-content h5 {
   font-size: 1.5em;
+  color: aliceblue;
 }
 
 .social-network {

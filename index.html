@@ -12,13 +12,13 @@
         <header>
             <nav class="navbar">
                 <div class="brand">
-                    <h2>Manuel Alejandro Cruz Arizmendi</h2>
+                    <h2>Manuel Alejandro <span>chimino316@hotmail.com</span></h2>
                 </div>
                 <ul class="menu">
                     <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#about">About me </a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">Tecnologías </a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#contact-section">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -27,7 +27,7 @@
             <div class="info-content">
                 <h1>Hola, mi nombre es <span>Manuel</span> Alejandro</h1>
                 <p>Soy ingeniero en electrónica egresado de la Universidad Autónoma Metropolitana (UAM) 2014 – 2019. Actualmente tengo conocimientos en las siguientes tecnologías (desarrollo web, administración de bases de datos, redes y telecomunicaciones, diseño de circuitos electrónicos) pero el área donde me desenvuelvo es el desarrollo web front-end.</p>
-                <a download href="#"><!--investigar como colocar el cv para descargarlo-->
+                <a download="Manuel Alejandro Cruz Arizmendi" href="Manuel Alejandro Cruz Arizmendi.pdf"><!--investigar como colocar el cv para descargarlo-->
                     <button class="download-cv" >descargar CV</button>
                 </a>
             </div>
@@ -36,101 +36,133 @@
     </div>
 
     <div class="about" id="about">
-        <img src="" alt="">
+        <div>
+            <img src="img/pngwing.com.png" alt="Tecnologías">
+        </div>
         <div class="about-info">
-            <h2>about me</h2>
-                <div class="divider"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nulla aliquam esse illum laudantium quidem voluptatem et possimus illo, molestias quos tempore saepe deserunt dolore hic nemo, at aspernatur. Repudiandae?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat officia quisquam adipisci soluta esse alias iure, nisi rem sequi dolores sint, expedita dignissimos. Dignissimos odio, facere autem minus commodi eveniet?</p>
-                    <button class="download-cv">Read more</button>
-
+            <h2>Tecnologías</h2>
+                <!-- <div class="divider"></div> -->
+            <p>Mi experiencia Profesional y académica me ha demostrado que no se puede estar estático y que el aprendizaje de nuevas tecnologías tiene que ser de forma constante por lo que el complementar mi carrera con los conocimientos de desarrollo web me ha dado más herramientas para continuar creando tecnología, lo cual es algo que me apasiona.</p>
+            <p>Algunos de los cursos que he tomado son los siguientes:</p>
+            <ul class="technologies">
+                <li><a href="https://platzi.com/p/chimino316/curso/1789-asincronismo-js/diploma/detalle/" target="_blank">Crso de Asincronismo con JavaScript</a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/1807-scope/diploma/detalle/" target="_blank">curso de Closures y Scope en JavaScript </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/1815-ecmascript-6/diploma/detalle/" target="_blank">Curso de ECMAScript 6+ </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2467-frontend-developer/diploma/detalle/" target="_blank">Curso de Frontend Developer </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2477-frontend-developer-practico/diploma/detalle/" target="_blank">Curso Práctico de Frontend Developer </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2327-javascript-practico/diploma/detalle/" target="_blank">Curso Práctico de JavaScript </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2444-react/diploma/detalle/" target="_blank"> Curso de Introducción a React.js </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2457-react-patrones-render/diploma/detalle/" target="_blank">Curso de React.js: Patrones de Render y Composición </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2118-react-hooks/diploma/detalle/" target="_blank">Curso Profesional de React Hooks </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2556-react-native/diploma/detalle/" target="_blank">Curso de Introducción a React Native </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2557-react-native-listas-apis/diploma/detalle/" target="_blank">Curso Práctico de React Native: Manejo de Listas y Consumo de APIs </a></li>
+                <li><a href="https://platzi.com/p/chimino316/curso/2558-react-native-formularios-almacenamiento/diploma/detalle/" target="_blank">Curso Práctico de React Native: Formularios, Almacenamiento y Deploy </a></li>
+            </ul>
+            <a download="Manuel Alejandro Cruz Arizmendi" href="Manuel Alejandro Cruz Arizmendi.pdf"><!--investigar como colocar el cv para descargarlo-->
+                <button class="download-cv" >descargar CV</button>
+            </a>
         </div>
     </div>
 
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="portfolio-headings">
-            <h2>My Portfolio</h2>
+            <h2>Portafolio</h2>
             <div class="divider"></div>
 
         </div>
         <div class="container">
             <div class="card">
-                <div class="card_img">
-
+                <div class="card_img">                    
                 </div>
                 <div class="card-title">
-                    <h2>Proyect Description</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, earum libero. Eveniet vero illo praesentium distinctio? Ea, assumenda voluptate distinctio laborum, unde possimus repellendus sint recusandae placeat doloribus sunt consectetur?</p>
+                    <h2>Rick and Morty API </h2>
+                    <p>Este proyecto fue creado con React.js cuyo propósito es consumir una API publica que en este caso es la API de Rick and Morty. Se implementó el uso de los hooks de React, el uso de un scroll infinito, la implementación de una sección de favoritos, entre otras cosas.</p>
                 </div>
                 <div class="card_proyect-links">
-                    <a href="">
+                    <a href="https://github.com/chimino17/RickAndMorty" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="">
+                    <a href="https://chimino17.github.io/RickAndMorty/" target="_blank">
                         <i class="fas fa-globe-americas"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-code"></i>
                     </a>
                 </div>
                 <div class="proyect-detail-content">
                     <button class="project-details download-cv">
-                        <a href="">
-                            Project details
+                        <a href="https://github.com/chimino17/RickAndMorty" target="_blank">
+                            Detalles
                         </a>
                     </button>
                 </div>
             </div>
             <div class="card">
-                <div class="card_img">
+                <div class="card_img-2">
 
                 </div>
                 <div class="card-title">
-                    <h2>Proyect Description</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, earum libero. Eveniet vero illo praesentium distinctio? Ea, assumenda voluptate distinctio laborum, unde possimus repellendus sint recusandae placeat doloribus sunt consectetur?</p>
+                    <h2>Pokédex (Android) </h2>
+                    <p>Este proyecto fue desarrollado en React Native como aplicación móvil, Su funcionalidad es presentar en pantalla todos los Pokemones existentes, permitiéndonos ver sus estadísticas, la aplicación cuenta con la opción de agregar a favoritos a los pokemones que uno desee. </p>
                 </div>
                 <div class="card_proyect-links">
-                    <a href="">
+                    <a href="https://github.com/chimino17/PokedexNative" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="">
-                        <i class="fas fa-globe-americas"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-code"></i>
+                    <a href="https://expo.dev/artifacts/483b824d-1944-4dfa-9df3-21570f898870">
+                        <i class="fa-solid fa-cloud-arrow-down"></i>
                     </a>
                 </div>
                 <div class="proyect-detail-content">
                     <button class="project-details download-cv">
-                        <a href="">
-                            Project details
+                        <a href="https://github.com/chimino17/PokedexNative" target="_blank">
+                            Detalles
                         </a>
                     </button>
                 </div>
             </div>
             <div class="card">
-                <div class="card_img">
+                <div class="card_img-3">
 
                 </div>
                 <div class="card-title">
-                    <h2>Proyect Description</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, earum libero. Eveniet vero illo praesentium distinctio? Ea, assumenda voluptate distinctio laborum, unde possimus repellendus sint recusandae placeat doloribus sunt consectetur?</p>
+                    <h2>Cotiza Criptomonedas </h2>
+                    <p>En este proyecto se realiza el cálculo del valor de las Criptomonedas más populares en tiempo real con el uso de React.js y gracias al uso de una API que proporciona información de la gran mayoría de las Criptomonedas, se puede consultar en Dólar, Peso, Euro y Libra.</p>
                 </div>
                 <div class="card_proyect-links">
-                    <a href="">
+                    <a href="https://github.com/chimino17/Cotizar-Criptomonedas" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="">
+                    <a href="https://chimino17.github.io/Cotizar-Criptomonedas/" target="_blank">
                         <i class="fas fa-globe-americas"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-code"></i>
                     </a>
                 </div>
                 <div class="proyect-detail-content">
                     <button class="project-details download-cv">
-                        <a href="">
-                            Project details
+                        <a href="https://github.com/chimino17/Cotizar-Criptomonedas" target="_blank">
+                            Detalles
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_img-4">
+
+                </div>
+                <div class="card-title">
+                    <h2>Pacientes veterinaria </h2>
+                    <p>Este proyecto tiene la finalidad de ayudar con el seguimiento de los pacientes que pueda tener una veterinaria, con el uso de React.js y local storage se implementaron formularios para guardar y hacer modificaciones de los pacientes a atender.</p>
+                </div>
+                <div class="card_proyect-links">
+                    <a href="https://github.com/chimino17/AdministradorPacientes" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://chimino17.github.io/AdministradorPacientes/" target="_blank">
+                        <i class="fas fa-globe-americas"></i>
+                    </a>
+                </div>
+                <div class="proyect-detail-content">
+                    <button class="project-details download-cv">
+                        <a href="https://github.com/chimino17/AdministradorPacientes" target="_blank">
+                            Detalles
                         </a>
                     </button>
                 </div>
@@ -139,44 +171,49 @@
 
     </div>
 
-    <div class="contact-section">
+    <div class="contact-section" id="contact-section">
         <div class="contact-heading">
-            <h2>Keep in touch</h2>
+            <h2>Contacto</h2>
             <div class="divider"></div>
+            <img src="https://images.vexels.com/media/users/3/140131/isolated/preview/cc86a9f4ca65a140b2edadf3f87f2c17-diseno-de-icono-de-circulo-de-correo-electronico.png" alt="E-mail">
         </div>
         <div class="container-contact">
-            <!-- <img src="../img/foto.jpg" alt=""> -->
 
             <div class="contact form">
-                <h4>send me a message</h4>
+                <h4>Contactame</h4>
 
-                <form action="form-control">
-                    <input type="text" placeholder="name">
-                    <input type="email" placeholder="email">
-                    <textarea placeholder="Place your messahe here..">
-                    </textarea>
+                <form action="https://formsubmit.co/chale17.ac@gmail.com" method="POST">
+                    <input type="text" placeholder="Nombre" name="Nombre">
+                    <input type="email" placeholder="Correo" name="Correo">
+                    <textarea type="text" name="Mensade" placeholder="Por favor escribe tu mensaje aqui"></textarea>
                     <button type="submit" class="btn-submit">
-                        send message
+                        Enviar Correo
                     </button>
 
                 </form>
+                <!-- <form action="https://formsubmit.co/chale17.ac@gmail.com" method="POST">
+                    <input type="text" name="name" required>
+                    <input type="email" name="email" required>
+                    <button type="submit">Send</button>
+               </form> -->
             </div>
 
         </div>
     </div>
-
     <footer class="footer">
         <div class="footer-content">
             <h5>Frontend Developer</h5>
         </div>
         <div class="social-network">
-            <a href="">
+            <a href="https://www.linkedin.com/in/manuel-alejandro-cruz-arizmendi-427935121/" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
             </a>
-            <i class="fab fa-github"></i>
-
+            <a href="https://github.com/chimino17" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
     </footer>
+
 
 
 </body>

@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&family=Radio+Canada:wght@300;600;700&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Koulen", cursive;
+  font-family: "Radio Canada", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(37, 37, 37);
+  color: aliceblue;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  border-bottom: 12px;
+  border-bottom-color: brown;
+  background-color: rgb(37, 37, 37);
+  display: flex;
+  justify-content: space-between;
+  padding: 2em; /*espacio entre los bordes*/
+}
+
+.brand {
+  margin-top: -7px;
+}
+
+.menu {
+  /* position: fixed; */
+  display: flex;
+  width: 50%;
+  justify-content: space-around; /*espacio entre las listas*/
+}
+
+.menu li {
+  list-style: none;
+}
+.menu a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+.menu .active {
+  color: aliceblue;
+}
+
+.menu a:hover {
+  background-color: rgb(70, 13, 13);
+  color: aliceblue;
+  transition: ease-in 0.5s; /*animacion del boton tipo encender luz*/
+}
+
+.info-content p {
+  font-size: 1.5em;
+}
+
+.main img {
+  border-radius: 60%;
+  width: 350px;
+  height: 350px;
+  border: 7px solid rgb(57, 57, 57);
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 50vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; /*alinear texto con la imagen*/
+}
+
+h1 {
+  font-size: 3em;
+}
+
+span {
+  color: rgb(121, 40, 40);
+}
+
+.download-cv {
+  padding: 10px 20px;
+  color: aliceblue;
+  background-color: rgb(94, 33, 33);
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(100, 50, 50, 50);
+}
+
+.download-cv:hover {
+  background-color: rgb(100, 100, 100);
+  color: aliceblue;
+  box-shadow: none;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  width: 100vw;
+  align-items: center;
+}
+
+.about img {
+  width: 100%;
+  grid-column: 1/5;
+}
+
+.about-info {
+  grid-column: 5/10;
+  padding: 3em;
+}
+
+.about-info h2 {
+  font-size: 2em;
+  color: rgb(37, 37, 37);
+}
+
+.divider {
+  height: 4px;
+  width: 60px;
+  background-color: rgb(70, 13, 13);
+  margin-top: 5px;
+  margin-bottom: 2.5em;
+}
+
+.about p {
+  margin-bottom: 1em;
+}
+
+/*portfolio*/
+
+.portfolio {
+  width: 100vw;
+  background-color: rgb(37, 37, 37);
+}
+
+.portfolio-headings {
+  width: 100vw;
+  padding: 5em;
+}
+
+.portfolio-headings h2 {
+  font-size: 2.5em;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  color: aliceblue;
+  height: 350px;
+  background-color: cadetblue;
+  margin: 1em;
+}
+
+.card_img {
+  width: 100%;
+  /* opacity: 50%;transparencia */
+  height: 150px;
+  background-image: url(../img/foto.jpg);
+  background-size: cover; /*abarcar el total asignado*/
+}
+
+.card-title {
+  padding: 20px;
+  text-align: center;
+}
+
+.card_proyect-links {
+  display: flex;
+  justify-content: space-evenly; /*para el espacio entre iconos*/
+}
+
+.card_proyect-links a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.card_proyect-links i {
+  font-size: 1.5em;
+}
+
+.card .project-details {
+  margin: 0 auto;
+  margin: 1em;
+  width: 50%;
+}
+
+.card .project-details a {
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase; /*lo pasa a mayusculas*/
+}
+
+.proyect-detail-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+/*aqui se salta 170 linead de codigo en CSS*/
+
+.container-contact {
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.contact-heading h2 {
+  font-size: 3em;
+}
+
+.container-contact img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+
+.form input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid aliceblue;
+  color: aliceblue;
+}
+
+.form textarea {
+  height: 150px;
+  background: none;
+  color: aliceblue;
+  padding: 1.5em;
+  border: 1px solid aliceblue;
+}
+
+.btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border: none;
+  text-transform: uppercase;
+  background-color: aqua;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 1px 3px 11px -5px rgba(100, 50, 50, 50);
+}
+
+.btn-submit:hover {
+  background-color: aliceblue;
+  box-shadow: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 200px;
+  background-color: aqua;
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.social-network i,
+.footer-content h5 {
+  font-size: 1.5em;
+}
+
+.social-network {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}

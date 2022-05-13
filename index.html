@@ -9,19 +9,22 @@
 </head>
 <body>
     <div class="wrapper" id="home">
+        
         <header>
             <nav class="navbar">
-                <div class="brand">
-                    <h2>Manuel Alejandro <span>chimino316@hotmail.com</span></h2>
-                </div>
                 <ul class="menu">
-                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a class="active" href="#home">Inicio</a></li>
                     <li><a href="#about">Tecnologías </a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
                     <li><a href="#contact-section">Contacto</a></li>
                 </ul>
             </nav>
         </header>
+
+        <div class="portfolio-headings">
+            <h2>Inicio</h2>
+        <div class="divider"></div>
+    </div>
 
         <main class="main">
             <div class="info-content">
@@ -31,17 +34,32 @@
                     <button class="download-cv" >descargar CV</button>
                 </a>
             </div>
-            <img class="photo" src="img/foto.jpg" alt="Manuel Alejandro picture">
+            <div class="main-img">
+                <img class="photo" src="img/foto.jpg" alt="Manuel Alejandro picture">
+            </div>
         </main>
+    
     </div>
 
     <div class="about" id="about">
-        <div>
-            <img src="img/pngwing.com.png" alt="Tecnologías">
+        <div class="grid-tec" id="grid-tec">
+            <img src="/img/JS.png" alt="JS">
+            <img src="/img/React.png" alt="React">
+            <img src="/img/HTML.png" alt="HTML">
+            <img src="/img/CSS.png" alt="CSS">
+            <img src="/img/Bootstrap.png" alt="Bootstrap">
+            <img src="/img/PHP.png" alt="PHP">
+            <img src="/img/Laravel.png" alt="Laravel">
+            <img src="/img/MyAQL.png" alt="MySQL">
+            <img src="/img/SQL server.png" alt="SQL server">
+            <img src="/img/Csharp.png" alt="C#">
+            <img src="/img/Python.png" alt="Python">
+            <img src="/img/SAP.png" alt="SAP">
         </div>
         <div class="about-info">
             <h2>Tecnologías</h2>
-                <!-- <div class="divider"></div> -->
+            <div class="divider"></div>
+
             <p>Mi experiencia Profesional y académica me ha demostrado que no se puede estar estático y que el aprendizaje de nuevas tecnologías tiene que ser de forma constante por lo que el complementar mi carrera con los conocimientos de desarrollo web me ha dado más herramientas para continuar creando tecnología, lo cual es algo que me apasiona.</p>
             <p>Algunos de los cursos que he tomado son los siguientes:</p>
             <ul class="technologies">
@@ -67,9 +85,10 @@
     <div class="portfolio" id="portfolio">
         <div class="portfolio-headings">
             <h2>Portafolio</h2>
-            <div class="divider"></div>
+        <div class="divider"></div>
 
         </div>
+        
         <div class="container">
             <div class="card">
                 <div class="card_img">                    
@@ -171,18 +190,21 @@
 
     </div>
 
+    <div class="portfolio-headings">
+        <h1>Contacto</h1>
+        <div class="divider"></div>
+
+    </div>  
     <div class="contact-section" id="contact-section">
         <div class="contact-heading">
-            <h2>Contacto</h2>
-            <div class="divider"></div>
             <img src="https://images.vexels.com/media/users/3/140131/isolated/preview/cc86a9f4ca65a140b2edadf3f87f2c17-diseno-de-icono-de-circulo-de-correo-electronico.png" alt="E-mail">
         </div>
         <div class="container-contact">
 
             <div class="contact form">
-                <h4>Contactame</h4>
+                <h2>Contactame</h2>
 
-                <form action="https://formsubmit.co/chale17.ac@gmail.com" method="POST">
+                <form class="form" action="https://formsubmit.co/chale17.ac@gmail.com" method="POST">
                     <input type="text" placeholder="Nombre" name="Nombre">
                     <input type="email" placeholder="Correo" name="Correo">
                     <textarea type="text" name="Mensade" placeholder="Por favor escribe tu mensaje aqui"></textarea>
@@ -191,15 +213,11 @@
                     </button>
 
                 </form>
-                <!-- <form action="https://formsubmit.co/chale17.ac@gmail.com" method="POST">
-                    <input type="text" name="name" required>
-                    <input type="email" name="email" required>
-                    <button type="submit">Send</button>
-               </form> -->
             </div>
 
         </div>
     </div>
+
     <footer class="footer">
         <div class="footer-content">
             <h5>Frontend Developer</h5>
@@ -211,6 +229,9 @@
             <a href="https://github.com/chimino17" target="_blank">
                 <i class="fab fa-github"></i>
             </a>
+        </div>
+        <div class="email">
+            <h4>chimino316@hotmail.com</h4>
         </div>
     </footer>
 

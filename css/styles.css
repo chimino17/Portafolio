@@ -12,9 +12,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (max-width: 640px) {
+  #home {
+    height: 180vh;
+  }
+}
+
 .wrapper {
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   background-color: rgb(37, 37, 37);
   color: aliceblue;
 }
@@ -29,10 +35,14 @@ body {
   color: rgb(140, 140, 140);
 }
 
+.technologies a:hover {
+  color: rgb(0, 0, 0);
+}
+
 .navbar {
   position: fixed;
   width: 100%;
-  border-bottom: 12px;
+  /* margin-bottom: 16px; */
   border-bottom-color: brown;
   background-color: rgb(37, 37, 37);
   display: flex;
@@ -40,13 +50,9 @@ body {
   padding: 2em; /*espacio entre los bordes*/
 }
 
-.brand {
-  margin-top: -7px;
-}
-
 .menu {
   display: flex;
-  width: 50%;
+  width: 100%;
   justify-content: space-around; /*espacio entre las listas*/
 }
 
@@ -69,24 +75,33 @@ body {
 }
 
 .info-content p {
+  margin-top: 16px;
   font-size: 1.5em;
 }
 
+.main-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .main img {
-  margin-left: 7em;
-  border-radius: 60%;
-  width: 500px;
-  height: 500px;
+  margin-left: 3em;
+  border-radius: 50%;
+  width: 60%;
+  /* height: 500px; */
   border: 7px solid rgb(57, 57, 57);
 }
 
 .main {
   margin: 0 auto;
   width: 80vw;
-  height: 50vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  height: 30vw;
   align-items: center; /*alinear texto con la imagen*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+
+  /* grid-template-columns: repeat(auto-fill, minmax(min(100%, 40rem), 2fr)); */
 }
 
 h1 {
@@ -117,19 +132,37 @@ html {
   box-shadow: none;
 }
 
+/*Tecnologias*/
+
 .about {
   display: grid;
   margin-top: 70px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 100vw;
-  height: 100vh;
+  height: 100vh; /*adaptar queryes*/
   align-items: center;
   margin: 0 auto;
 }
 
+@media (max-width: 640px) {
+  #grid-tec {
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .about {
+    height: 150vh;
+  }
+}
+
+.grid-tec {
+  display: grid;
+  align-items: center; /*alinear texto con la imagen  60px*/
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
 .about img {
-  width: 80%;
-  margin-left: 45px;
+  width: 100%;
 }
 
 .about-info {
@@ -157,12 +190,29 @@ html {
 
 .portfolio {
   width: 100vw;
-  height: 100vh;
+  height: 100vh; /*adaptar a mediaquerys*/
   background-color: rgb(37, 37, 37);
 }
 
+@media (max-width: 1500px) {
+  .portfolio {
+    height: 140vh; /*adaptar a mediaquerys*/
+  }
+}
+
+@media (max-width: 749px) {
+  .portfolio {
+    height: 250vh; /*adaptar a mediaquerys*/
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio {
+    height: 365vh; /*adaptar a mediaquerys*/
+  }
+}
+
 .portfolio-headings {
-  width: 100vw;
   padding: 5em;
 }
 
@@ -171,18 +221,20 @@ html {
   color: aliceblue;
 }
 
-.portfolio .container {
+.container {
   width: 80vw;
-  height: 80vw;
+  height: 50vw;
   margin: 0 auto;
-  display: flex;
   justify-content: center;
+  display: grid;
+  align-items: center; /*alinear texto con la imagen*/
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .card {
-  width: 300px;
+  width: 280px; /*ajustar media querys*/
   color: aliceblue;
-  height: 350px;
+  height: 510px;
   background-color: rgb(69, 69, 69);
   margin: 1em;
 }
@@ -254,33 +306,37 @@ html {
   margin-top: 1em;
 }
 
-/*aqui se salta 170 linead de codigo en CSS*/
+/*Contacto*/
+
 .contact-section {
-  width: 80vw;
-  height: 90vv;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
-  margin: 0 auto;
+}
+
+.contact-heading {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-heading img {
+  width: 50%;
 }
 
 .container-contact {
   padding: 3em;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contact-heading h2 {
   font-size: 3em;
 }
 
-.container-contact img {
-  width: 500px;
-  height: 500px;
-  bottom: 0px;
-}
-
 .contact form {
   display: grid;
+  justify-content: center;
 }
 
 .form {
@@ -300,7 +356,8 @@ html {
 }
 
 .form textarea {
-  height: 150px;
+  height: 200px;
+  width: 350px;
   background: none;
   color: black;
   padding: 1.5em;
@@ -323,6 +380,8 @@ html {
   background-color: rgb(70, 13, 13);
   box-shadow: none;
 }
+
+/*footer*/
 
 .footer {
   display: flex;
@@ -350,4 +409,9 @@ html {
   justify-content: space-evenly;
   width: 300px;
   margin-top: 1em;
+}
+
+.email {
+  margin-top: 13px;
+  color: aliceblue;
 }

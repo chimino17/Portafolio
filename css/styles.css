@@ -214,7 +214,7 @@ html {
 
 @media (max-width: 640px) {
   .portfolio {
-    height: 645vh; /*adaptar a mediaquerys*/
+    height: 685vh; /*adaptar a mediaquerys*/
   }
 }
 
